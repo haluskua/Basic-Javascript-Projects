@@ -1,11 +1,56 @@
-body {
-  min-height: 100vh;
+/*
+Header
+*/
+header {
+  padding: 8px;
+  background-color: rgba(0,0,0,0.25);
+  top: 0;
+}
+nav{
   display: flex;
+  width: 100%;
+  margin: 0 20px;
+  background-color: rgba(0,0,0,0.25);
+  height: auto;
+  border-radius: 3px;
+}
+
+nav, ul{
+  display: flex;
+  justify-content: space-around;
+  padding: 0.3rem;
+  list-style: none;
+  width: 90vw;
+}
+
+nav, ul, li {
+  height: 100%;
+  margin: 0.25rem;
+}
+nav, ul, li, a {
+  cursor: pointer;
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+nav, ul, li, a:hover{
+  color: rgb(255, 0, 157);
+}
+
+body {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 3px;
 }
+
 .container {
-  min-height: 56vh;
+  /* min-height: 56vh; */
+  max-width: 25vw;
 }
 .colorBtn {
   padding: 1rem;
@@ -31,12 +76,12 @@ body {
   text-align: center;
 }
 .hex {
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   letter-spacing: 0.1rem;
 }
 
 .hexBtn,
-#quoteBtn {
+#quoteBtn, #sendBtn {
   color: #85ff8a;
   border: 3px solid #85ff8a;
   border-radius: 7px;
@@ -49,6 +94,10 @@ body {
   margin: 20px 0;
 }
 
+button:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
 .hexBtn:hover {
   background: rgba(0, 0, 0, 0);
 }
@@ -57,8 +106,29 @@ body {
 }
 .left-bar {
   border-left: 2rem solid pink;
+  max-width: 100%;
+  margin: auto;
+  height: auto;
 }
 
 .left-bar h2 {
-    margin-left: 12px;
+    margin-left: 8px;
+}
+
+input[type=text] {
+  padding: 0.7rem;
+  margin: 1rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  border: 3px solid #88d5e9;
+  outline: none;
+}
+
+input[type=text]:focus{
+  box-shadow: 0 0  10px #88d5e9;
+}
+
+#messageOut {
+  margin: 0.5rem 0;
+  color: #88d5e9;
 }

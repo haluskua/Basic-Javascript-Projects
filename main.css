@@ -1,12 +1,14 @@
 body {
-  min-height: 50vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+.container {
+  min-height: 56vh;
+}
 .colorBtn {
-  padding: 0.65rem 0.5rem;
+  padding: 1rem;
   border: 3px solid #fefefe;
   border-radius: 7px;
   color: #fefefe;
@@ -19,4 +21,32 @@ body {
 
 .colorBtn:hover {
   background: rgba(0, 0, 0, 1);
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+.container {
+  text-align: center;
+}
+.heX {
+  font-size: 3rem;
+}
+
+.hexBtn {
+  color: #85ff8a;
+  border: 3px solid #85ff8a;
+  border-radius: 7px;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  outline: none;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+.hexBtn:hover {
+  background: rgba(0, 0, 0, 0);
 }

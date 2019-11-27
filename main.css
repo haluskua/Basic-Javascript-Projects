@@ -30,11 +30,13 @@ body {
 .container {
   text-align: center;
 }
-.heX {
-  font-size: 3rem;
+.hex {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
 }
 
-.hexBtn {
+.hexBtn,
+#quoteBtn {
   color: #85ff8a;
   border: 3px solid #85ff8a;
   border-radius: 7px;
@@ -49,4 +51,14 @@ body {
 
 .hexBtn:hover {
   background: rgba(0, 0, 0, 0);
+}
+#quoteAuthor {
+  color: #ff00ff;
+}
+.left-bar {
+  border-left: 2rem solid pink;
+}
+
+.left-bar h2 {
+    margin-left: 12px;
 }

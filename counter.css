@@ -1,43 +1,107 @@
 body {
-    max-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 3px;
-    background: url('img/chip.jpg');
-    background-size: cover;
-    background-position: center; 
-    background-repeat: repeat;
-  }
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 3px;
+  background: url("img/chip.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+.counter-box {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.btn, .slider_btn, .prevBtn {
+  color: #85ff8a;
+  border: 3px solid #85ff8a;
+  border-radius: 7px;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  outline: none;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+.counter {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 6.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
 
+.counter-title {
+  width: 100%;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: lighter;
+  text-transform: capitalize;
+  font-size: 3.5rem;
+  color: #85ff8a;
+}
+.bcgBody {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 90%;
+  align-items: center;
+  background: url("img/1920.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background: rgba(0, 0, 0, 0.77);
+  padding: 17px;
+}
 
-  .btn{
-    color: #85ff8a;
-    border: 3px solid #85ff8a;
-    border-radius: 7px;
-    background: rgba(0, 0, 0, 0.6);
-    font-size: 1rem;
-    padding: 1rem;
-    cursor: pointer;
-    outline: none;
-    text-transform: capitalize;
-    margin: 20px 0;
-  }
-  .counter {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      font-size: 6.5rem;
-      font-family: Arial, Helvetica, sans-serif;
-      color: white;
-  }
+.images {
+  /* background: yellow; */
+  flex: 0 0 80%;
+  min-height: 70vh;
+  background: url("img/bcg-0.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  border-radius: 15px;
+  position: relative;
+}
+.slider_btn{
+  display: inline-block;
+  background: white;
+  color: black;
+  border: 3px solid #458ba1;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+  box-shadow: 1px 5px black;
+  outline: none;
+}
 
-  .counter-title{
-      width: 100%;
-      text-align: center;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-style: italic;
-      font-size: 3.5rem;
-      color: #85ff8a;
-  }
+.prevBtn{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%)
+}
+.nextBtn{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%)
+}
+.btn:active{
+  background: orange;
+  box-shadow: 1px 1px orange;
+}
+.btn:hover{
+  background: purple;
+  color: white;
+}

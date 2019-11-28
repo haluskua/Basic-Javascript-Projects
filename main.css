@@ -3,19 +3,20 @@ Header
 */
 header {
   padding: 8px;
-  background-color: rgba(0,0,0,0.25);
+  background-color: rgba(0, 0, 0, 0.25);
   top: 0;
 }
-nav{
+nav {
   display: flex;
   width: 100%;
   margin: 0 20px;
-  background-color: rgba(0,0,0,0.25);
+  background-color: rgba(0, 0, 0, 0.25);
   height: auto;
   border-radius: 3px;
 }
 
-nav, ul{
+nav,
+ul {
   display: flex;
   justify-content: space-around;
   padding: 0.3rem;
@@ -23,11 +24,16 @@ nav, ul{
   width: 90vw;
 }
 
-nav, ul, li {
+nav,
+ul,
+li {
   height: 100%;
   margin: 0.25rem;
 }
-nav, ul, li, a {
+nav,
+ul,
+li,
+a {
   cursor: pointer;
   color: white;
   text-transform: capitalize;
@@ -35,7 +41,10 @@ nav, ul, li, a {
   text-decoration: none;
   font-family: sans-serif;
 }
-nav, ul, li, a:hover{
+nav,
+ul,
+li,
+a:hover {
   color: rgb(255, 0, 157);
 }
 
@@ -48,9 +57,16 @@ body {
   margin-top: 3px;
 }
 
-.container, .counter {
+.container,
+.counter {
   /* min-height: 56vh; */
-  max-width: 25vw;
+  min-width: 25vw;
+  max-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .colorBtn {
@@ -81,8 +97,19 @@ body {
   letter-spacing: 0.1rem;
 }
 
+#quote {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+  line-height: 1.35em;
+  letter-spacing: 0.05;
+}
 .hexBtn,
-#quoteBtn, #sendBtn, .Btn {
+#quoteBtn,
+#sendBtn,
+.Btn {
+  display: flex;
+  justify-content: center;
   color: #85ff8a;
   border: 3px solid #85ff8a;
   border-radius: 7px;
@@ -93,9 +120,11 @@ body {
   outline: none;
   text-transform: capitalize;
   margin: 20px 0;
+  width: 400px;
+  position: relative;
 }
 
-button:hover{
+button:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -113,10 +142,10 @@ button:hover{
 }
 
 .left-bar h2 {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
-input[type=text] {
+input[type="text"] {
   padding: 0.7rem;
   margin: 1rem;
   border-radius: 5px;
@@ -125,8 +154,8 @@ input[type=text] {
   outline: none;
 }
 
-input[type=text]:focus{
-  box-shadow: 0 0  10px #88d5e9;
+input[type="text"]:focus {
+  box-shadow: 0 0 10px #88d5e9;
 }
 
 #messageOut {

@@ -14,3 +14,4 @@ function sendMsg (){
     messageOut.innerHTML = content;
     messageIn.value = '';
 }
+

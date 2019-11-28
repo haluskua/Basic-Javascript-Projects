@@ -48,10 +48,11 @@ body {
   margin-top: 3px;
 }
 
-.container {
+.container, .counter {
   /* min-height: 56vh; */
   max-width: 25vw;
 }
+
 .colorBtn {
   padding: 1rem;
   border: 3px solid #fefefe;
@@ -81,7 +82,7 @@ body {
 }
 
 .hexBtn,
-#quoteBtn, #sendBtn {
+#quoteBtn, #sendBtn, .Btn {
   color: #85ff8a;
   border: 3px solid #85ff8a;
   border-radius: 7px;
